@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+
+    <title>BBTracker</title>
+</head>
+<body class="master">
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div id='map' style='width: 1200px; height: 500px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoib25seXJpbGV5IiwiYSI6ImNsZW51ajM0bTAyYmszeGt0NDl1YThwYmQifQ.vLmhI5w6K6ls-99yY1MXpA';
+            const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/streets-v12', // style URL
+            center: [41, -76], // starting position [lng, lat]
+            zoom: 9, // starting zoom
+            });
+        </script>
+    
+</body>
+</html>

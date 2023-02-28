@@ -1,0 +1,41 @@
+.master {
+    background-color: rgb(68, 63, 61);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.topnav {
+    border-radius: 10px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #929292;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #9d0000;
+    color: white;
+}
+
+.main {
+    padding: 10px;
+    background-color: rgb(66, 66, 66);
+}
+
+#map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
